@@ -5,23 +5,15 @@ Simple Unicode Encoding Tool
 import sys
 import argparse
 
-UTF8 = 'UTF-8'
-UTF16 = 'UTF-16'
-UTF32 = 'UTF-32'
-UTF16_LE = 'UTF-16LE'
-UTF16_BE = 'UTF-16BE'
-UTF32_LE = 'UTF-32LE'
-UTF32_BE = 'UTF-32BE'
+UTF8 = 'utf-8'
+UTF16 = 'utf-16'
+UTF32 = 'utf-32'
+UTF16_LE = 'utf-16LE'
+UTF16_BE = 'utf-16BE'
+UTF32_LE = 'utf-32LE'
+UTF32_BE = 'utf-32BE'
 
-VALID_ENCODINGS = [
-    UTF8,
-    UTF16,
-    UTF32,
-    UTF16_LE,
-    UTF16_BE,
-    UTF32_LE,
-    UTF32_BE,
-]
+VALID_ENCODINGS = [UTF8, UTF16, UTF32, UTF16_LE, UTF16_BE, UTF32_LE, UTF32_BE]
 
 
 def detect_bom(filepath):
